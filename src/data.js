@@ -27,11 +27,11 @@ export const pharmacies = [
   { id: 'p3', name: 'Bridgewell Health', area: 'Yaba', city: 'Lagos', address: '6 Demo Crescent, Yaba, Lagos', lat: 6.509, lng: 3.371, verified: true, hours: '9am – 8pm', initials: 'BH', color: 'orange' },
   { id: 'p4', name: 'Olive Community Pharmacy', area: 'Surulere', city: 'Lagos', address: '32 Example Road, Surulere, Lagos', lat: 6.497, lng: 3.347, verified: true, hours: '8am – 10pm', initials: 'OC', color: 'purple' },
   { id: 'p5', name: 'Harbour Medical Store', area: 'Lekki', city: 'Lagos', address: '9 Sample Street, Lekki, Lagos', lat: 6.447, lng: 3.465, verified: false, hours: '9am – 7pm', initials: 'HM', color: 'blue' },
-  { id: 'p6', name: 'Sunrise Pharmacy', area: 'Victoria Island', city: 'Lagos', address: '14 Demo Close, Victoria Island, Lagos', lat: 6.429, lng: 3.423, verified: true, hours: '8am – 9pm', initials: 'SP', color: 'orange' },
+  { id: 'p6', name: 'Sunrise Pharmacy', area: 'Victoria Island', city: 'Lagos', address: '14 Demo Close, Victoria Island, Lagos', lat: 6.429, lng: 3.423, verified: true, hours: '24 hours', open24: true, initials: 'SP', color: 'orange' },
   { id: 'p7', name: 'Maple Health Pharmacy', area: 'Bodija', city: 'Ibadan', address: '12 Example Way, Bodija, Ibadan', lat: 7.438, lng: 3.918, verified: true, hours: '8am – 8pm', initials: 'MH', color: 'green' },
   { id: 'p8', name: 'Hilltop Community Pharmacy', area: 'Dugbe', city: 'Ibadan', address: '7 Demo Avenue, Dugbe, Ibadan', lat: 7.387, lng: 3.877, verified: true, hours: '9am – 9pm', initials: 'HC', color: 'purple' },
   { id: 'p9', name: 'Bloom Care Pharmacy', area: 'Ring Road', city: 'Ibadan', address: '22 Sample Road, Ring Road, Ibadan', lat: 7.363, lng: 3.872, verified: false, hours: '8am – 7pm', initials: 'BC', color: 'orange' },
-  { id: 'p10', name: 'Northside Pharmacy', area: 'Agbowo', city: 'Ibadan', address: '3 Example Street, Agbowo, Ibadan', lat: 7.446, lng: 3.902, verified: true, hours: '8am – 9pm', initials: 'NP', color: 'blue' },
+  { id: 'p10', name: 'Northside Pharmacy', area: 'Agbowo', city: 'Ibadan', address: '3 Example Street, Agbowo, Ibadan', lat: 7.446, lng: 3.902, verified: true, hours: '24 hours', open24: true, initials: 'NP', color: 'blue' },
 ];
 
 export const cityCenters = { Lagos: [6.5244, 3.3792], Ibadan: [7.3775, 3.9470] };
@@ -41,7 +41,7 @@ export function initialInventory() {
   return pharmacies.flatMap((p, pi) => medicines.map((m, mi) => ({
     id: `${p.id}-${m.id}`, pharmacyId: p.id, medicineId: m.id,
     quantity: (pi + mi) % 7 === 5 ? 0 : (pi + mi) % 5 === 3 ? 4 : 24 + ((pi * 13 + mi * 7) % 96),
-    price: Math.round(m.basePrice * [1, 1.15, 0.92, 1.06, 1.6, 1.22, 0.88, 1.1, 1.4, 1.03][pi] / 50) * 50,
+    price: Math.round(m.basePrice * [1, 1.15, 0.92, 1.06, 1.6, 1.45, 0.88, 1.1, 1.4, 1.03][pi] / 50) * 50,
     updatedAt: sampleTime - [35, 90, 180, 960, 3100, 75, 42, 260, 1500, 120][pi] * 60000,
   })));
 }

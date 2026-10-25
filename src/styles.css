@@ -82,3 +82,55 @@
 [data-theme=dark] .leaflet-control-attribution a{color:#7fd6a6}
 @media(max-width:370px){.header-inner .logo{font-size:22px;gap:7px}.header-inner .logo-mark{width:29px;height:29px}.header-right{gap:5px}}
 [data-theme=dark] button:focus-visible,[data-theme=dark] a:focus-visible{outline-color:#7fd6a6}
+.map-price.low{border-color:#c5a467;background:#fbf7ea;color:#7a5a20}
+.map-price.out{border-color:#b6baac;background:#f3f4ef;color:#5b6258}
+.map-legend{position:absolute;bottom:60px;right:12px;z-index:400;display:flex;gap:9px;background:#fffffff0;border-radius:5px;padding:7px 9px;font-size:9px;color:#4f6942}
+.map-legend>span{display:flex;align-items:center;gap:4px}
+.map-legend i{width:7px;height:7px;border-radius:50%}
+.map-legend .in{background:#7aa965}.map-legend .low{background:#c5a467}.map-legend .out{background:#b6baac}
+.price-trend{margin-bottom:30px}
+.trend-body{display:grid;grid-template-columns:180px 1fr;gap:28px;align-items:center;padding:18px 24px 22px}
+.trend-summary>span{font-size:11px;color:#56684f}
+.trend-summary>strong{display:block;font-family:'Manrope',sans-serif;font-size:31px;font-weight:750;letter-spacing:-.8px;margin:8px 0 7px;color:#3d6338}
+.trend-summary>strong.up{color:#805d21}
+.trend-summary>small{font-size:10px;color:#56684f}
+.trend-chart{margin:0;min-width:0}
+.trend-chart svg{width:100%;height:auto;display:block}
+.trend-chart .grid{stroke:#e7ede1;stroke-width:1}
+.trend-chart .area{fill:#eaf2e4}
+.trend-chart .line{fill:none;stroke:#4f8a6a;stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+.trend-chart .dot{fill:#0c6b52;stroke:#fff;stroke-width:2}
+.trend-chart figcaption{display:flex;justify-content:space-between;gap:10px;font-size:9px;color:#56684f;margin-top:7px}
+.confidence-box{border:1px solid #e2ead7;border-radius:8px;background:#fafcf6;padding:16px;margin:4px 0 20px}
+.confidence-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.confidence-head>div>span{display:block;font-size:9px;letter-spacing:1px;color:#4f6942;font-weight:600}
+.confidence-head strong{font-family:'Manrope',sans-serif;font-size:24px;color:#36582d;display:block;margin-top:4px}
+.confidence-head strong small{font-size:11px;color:#56684f;font-weight:500}
+.confidence-bar{height:7px;background:#e7ede1;border-radius:4px;overflow:hidden;margin:12px 0 13px}
+.confidence-bar span{display:block;height:100%;border-radius:4px;background:#4f8a6a}
+.confidence-bar span.fair{background:#b08a3e}
+.confidence-bar span.low{background:#8f8f85}
+.confidence-rows{margin:0;font-size:10px}
+.confidence-rows>div{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px solid #eef2e8}
+.confidence-rows>div:last-child{border:0}
+.confidence-rows dt{color:#56684f}
+.confidence-rows dd{margin:0;color:#3d6338;font-weight:600}
+.confidence-box>p{font-size:9px;line-height:1.7;color:#56684f;margin-top:9px}
+.alert-icon.red{background:#f9ece4;color:#9a5a38}
+@media(max-width:780px){.trend-body{grid-template-columns:1fr;gap:15px}.trend-summary{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.trend-summary>strong{font-size:26px;margin:0}.trend-summary>small{width:100%}}
+[data-theme=dark] .map-price.low{background:#2a2517;color:#e8c379;border-color:#806b3b}
+[data-theme=dark] .map-price.out{background:#202823;color:#a7ae9f;border-color:#4a5550}
+[data-theme=dark] .map-legend{background:#16211cf0;color:#b3c2b5}
+[data-theme=dark] .map-legend .out{background:#7c8578}
+[data-theme=dark] .trend-summary>span,[data-theme=dark] .trend-summary>small,[data-theme=dark] .trend-chart figcaption,[data-theme=dark] .confidence-head>div>span,[data-theme=dark] .confidence-rows dt,[data-theme=dark] .confidence-box>p,[data-theme=dark] .confidence-head strong small{color:#b3c2b5}
+[data-theme=dark] .trend-summary>strong{color:#7fd6a6}
+[data-theme=dark] .trend-summary>strong.up{color:#e8c379}
+[data-theme=dark] .trend-chart .grid{stroke:#2b3b33}
+[data-theme=dark] .trend-chart .area{fill:#1b3326}
+[data-theme=dark] .trend-chart .line{stroke:#5fb784}
+[data-theme=dark] .trend-chart .dot{fill:#5fc896;stroke:#16211c}
+[data-theme=dark] .confidence-box{background:#16211c;border-color:#2b3b33}
+[data-theme=dark] .confidence-head strong,[data-theme=dark] .confidence-rows dd{color:#e3ebe4}
+[data-theme=dark] .confidence-bar{background:#243a2f}
+[data-theme=dark] .confidence-rows>div{border-color:#2b3b33}
+[data-theme=dark] .alert-icon.red{background:#2f1f1a;color:#e2a189}
