@@ -134,3 +134,7 @@
 [data-theme=dark] .confidence-bar{background:#243a2f}
 [data-theme=dark] .confidence-rows>div{border-color:#2b3b33}
 [data-theme=dark] .alert-icon.red{background:#2f1f1a;color:#e2a189}
+
+.footer-top>div>a.footer-pilot{display:block;font-size:10px;color:#0c6b52;padding:0;margin:11px 0;text-align:left;text-decoration:none;font-weight:600}
+.footer-top>div>a.footer-pilot:hover{text-decoration:underline}
+[data-theme=dark] .footer-top>div>a.footer-pilot{color:#8fd3b8}
