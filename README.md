@@ -215,3 +215,7 @@ Blobs is bound automatically on Netlify, so no environment variables or database
 ## Disclaimer
 
 Medstock is an independent demonstration and pilot. It is not a pharmacy, regulator, medical service or authenticity-verification service. Always confirm stock and price directly with a licensed pharmacy, and consult a qualified healthcare professional before starting, stopping or substituting any medicine.
+
+## License
+
+Released under the [MIT License](LICENSE). Copyright (c) 2026 Buggydemon.
